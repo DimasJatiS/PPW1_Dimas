@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoh HTML Form Elements</title>
+</head>
+<body>
+    <form>
+        <fieldset style="background-color: azure;">
+            <legend>INFORMASI PROBADI</legend>
+            <!-- dengan placeholder -->
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama">
+            <!-- tanpa placeholder -->
+            <br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" >
+        </fieldset>
+
+        <br>
+
+        <!-- menggunakan p -->
+        <p>Pilih Kota:
+        <input list="cities" id="city" name="city">
+        </p>
+        <datalist id="cities">
+            <option value="Jakarta">
+            <option value="Surabaya">
+            <option value="Bandung">
+            <option value="Yogyakarta">
+        </datalist>
+        <br>
+    
+        <!-- menggunakan label -->
+        <label for="kendaraan">Pilih kendaraan:</label>
+        <select id="kendaraan" name="kendaraan">
+            <optgroup label="mobil">
+                <option value="avanza">Avanza</option>
+                <option value="innova">Innova</option>
+            </optgroup>
+            <optgroup label="motor">
+                <option value="beat">beat</option>
+                <option value="vario">vario</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <!-- Menggunakan output -->
+        <label for="range">Pilih Nilai:</label>
+    <input type="range" id="range" name="range" min="0" max="200" oninput="result.value = range.value">
+    <output id="result">100</output>     
+        <br><br>
+        
+        <button type="submit">Kirim</button>
+    </form>
+</body>
+</html>

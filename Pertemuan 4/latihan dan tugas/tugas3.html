@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nomor 3</title>
+</head>
+<body>
+    <h2>Perbedaan atribut Disabled dan readonly</h2>
+    <p>
+        Atribut disabled digunakan agar input data tidak bisa dimanipulasi.
+        Artinya, input dari siapapun akan tetap sama dan tidak akan berubah. 
+        Data yang terdisabled tidak akan dikirimkan ke server, dan pengguna 
+        hanya bisa melihat data ini saja.
+        Contoh penggunaan atribut disabled,
+    </p>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John" disabled><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe">
+    </form>
+
+    <p>
+        Atribut readonly mirip dengan diasbled, tetapi atribut readonly tetap
+        dapat untuk dikirim ke server, walaupun tidak bisa mengubah input. 
+        Artian lain, data yang ada, tetap diperlukan pengguna, han ya saja 
+        tidak dapat diubah. Misalnya ID_pengguna
+    </p>
+    <label for="user_id">User ID:</label>
+    <input type="text" id="user_id" name="user_id" value="USR12345" readonly>    
+
+</body>
+</html>

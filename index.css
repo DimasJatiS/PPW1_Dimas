@@ -1,0 +1,174 @@
+/* Tema gelap */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header */
+header {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-bottom: 2px solid #333;
+    position: relative;
+  }
+  header h1 {
+    padding: 30px;
+    background-color: #383838;
+    border-radius: 50px;
+    box-shadow: 0 4px 12px rgb(155, 155, 155);
+  }
+  
+  /* Nama dan NIM di kiri (pakai aside) */
+  .kiri{
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    left: 20px;
+    padding: 10px;
+    background-color: #575757;
+    border-radius: 10px;
+    box-shadow: 6px 6px 19px rgba(173, 173, 173, 0.568);
+  }
+  
+  .kanan {
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    right: 20px;  
+  }
+
+  .glow-gradient img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Biar gambarnya bulat */
+    transition: filter 0.3s ease;
+}
+
+.glow-gradient img:hover {
+  filter: drop-shadow(0 0 15px rgb(182, 101, 55)); /* Cahaya biru di sekitar gambar */
+}
+  
+  aside p {
+    margin: 0;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  
+  /* Judul header tetap di tengah */
+  h1 {
+    font-size: 42px;
+    color: #fd788b;
+    text-align: center;
+  }
+  
+  /* Section pertemuan */
+  .pertemuan {
+    margin: 20px;
+    padding: 0;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 0 7px 10px rgba(247, 148, 162, 0.61);
+    
+  }
+
+  .pertemuan button {
+    font-size: 35px;
+  }
+  .pertemuan ul li {
+    font-size: 25px;
+  }
+
+  
+  /* Tombol dropdown */
+  .dropdown-btn {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    color: #c0bfbf;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: left;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-btn:hover {
+    background-color: #444;
+  }
+  
+  /* Konten dropdown (sembunyi default) */
+  .dropdown-content {
+    display: none;
+    padding: 0;
+    margin: 0;
+    background-color: #1f1f1f;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  /* Daftar tugas */
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0;
+  }
+  
+  /* Tombol sebagai link */
+  .link-btn {
+    display: block;
+    padding: 12px;
+    background-color: #292929;
+    color: #ffcc00;
+    text-decoration: none;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .link-btn:hover {
+    background-color: #444;
+  }
+
+
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: #777;
+  }
+  
+  /* Responsif */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 20px;
+    }
+
+    .pertemuan button {
+        font-size: 20px;
+    }
+  
+    .dropdown-btn {
+      font-size: 14px;
+    }
+  
+    .link-btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  

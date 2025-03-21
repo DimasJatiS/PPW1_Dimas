@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Struktur Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, footer {
+            background-color: #f4a261;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #a8d5ba;
+            text-align: center;
+            padding: 15px;
+        }
+        .container {
+            display: flex;
+        }
+        main {
+            background-color: #b5838d;
+            flex: 2;
+            padding: 20px;
+        }
+        section {
+            background-color: #e9c46a;
+            padding: 15px;
+        }
+        article {
+            background-color: #e76f51;
+            margin: 10px 0;
+            padding: 15px;
+        }
+        aside {
+            background-color: #87b5d8;
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header><h1>Header</h1></header>
+    <nav><h2>Navigation</h2></nav>
+    <div class="container">
+        <main>
+            <section>
+                <article><h3>Article 1</h3></article>
+                <article><h3>Article 2</h3></article>
+            </section>
+        </main>
+        <aside><h2>Aside</h2></aside>
+    </div>
+    <footer><h2>Footer</h2></footer>
+</body>
+</html>

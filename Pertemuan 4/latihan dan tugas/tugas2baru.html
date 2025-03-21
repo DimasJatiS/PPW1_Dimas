@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas PW 2</title>
+    <style>
+        body {
+            background-color: rgb(248, 255, 240);
+            font-family: sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .containerA {
+            border-top: 8px solid rgb(250, 231, 206);
+            border-left: 5px solid rgb(255, 223, 249);
+            padding: 20px;
+        }
+        .containerB {
+            border-top: 10px solid rgb(255, 255, 255);
+            border-left: 5px solid rgb(69, 101, 61);
+            padding: 20px;
+        }
+        .box {
+            background-color: rgb(227, 248, 212);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 5px 8px 8px rgb(91, 112, 84);
+        }
+        .boxA {
+            padding: 10px;
+            border-radius: 8px;
+            background-color:rgb(192, 192, 192);
+        }
+        img {
+            border: 1px solid rgb(218, 220, 224);
+            border-radius: 8px;
+            display: block;
+            margin: auto;
+            width: 100%;
+            max-width: 645px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .isi {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            background: rgba(158, 158, 158, 0.2);
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+            color: rgb(0, 0, 0);
+            box-shadow: 3px 7px 10px rgba(83, 83, 83, 0.2);
+            text-align: center;
+        }
+        .isiA {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            background: rgba(153, 152, 152, 0.705);
+            border-radius: 8px;
+            outline: none;
+            font-size: 14px;
+            color: rgb(0, 0, 0);
+            box-shadow: 3px 7px 10px rgba(83, 83, 83, 0.2);
+            text-align: center;
+        }
+        .isiA::placeholder {
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+        }
+        .btn-submit {
+            padding: 10px 20px;
+            background-color: rgb(123, 123, 123);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+        }
+        .btn-submit:hover {
+            background-color: rgb(83, 140, 68);
+        }
+        .blur-border {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .blur-border::before {
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            right: -5px;
+            bottom: -5px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.2);
+            filter: blur(10px);
+            z-index: -1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="center">
+        <img src="../images/gambar4.jpg" alt="Header Form">
+    </div>
+
+    <div class="container containerA">
+        <div class="boxA">
+            <h2>SURVEI KEPUASAN PENGGUNA</h2>
+            <p>Di sini Anda bisa mengisi seberapa puas Anda dengan yang ditampilkan. <br>
+                Survei akan dikirim ke email pembuat.</p>
+        </div>
+    </div>
+
+    <!-- Form Utama -->
+    <form action="https://formsubmit.co/dimasjatisatria@gmail.com" method="POST">
+
+        <div class="container containerB">
+            <div class="box">
+                <h2>Masukkan Nama Anda</h2>
+                <input class="isi" type="text" id="name" name="name" placeholder="Nama Panjang" required>
+            </div>
+        </div>
+
+        <div class="container containerB">
+            <div class="box">
+                <h2>Masukkan Email Anda</h2>
+                <input class="isi" type="email" id="email" name="email" placeholder="Email Anda" required>
+            </div>
+        </div>
+        
+        <div class="container containerB">
+            <div class="box">
+                <h2>Berikan Komentar Anda pada Form di Bawah</h2>
+                <textarea class="isiA" type="text" name="Komentar" rows="6" cols="50" placeholder="Berikan Komentar Anda"></textarea>
+            </div>
+        </div>
+
+        <!-- Tombol Submit di Paling Bawah -->
+        <div class="container">
+            <button type="submit" class="btn-submit">Kirim Form</button>
+        </div>
+    </form>
+
+</body>
+</html>
